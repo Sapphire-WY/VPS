@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- Access By Password -->
+    <script type="text/javascript">
+      function password() {
+        var tNumber = 1;
+        var sPassword = prompt('Please enter the password.');
+        while (sPassword != "123") {
+          if (tNumber < 2) {
+            var sPassword = prompt('Invalid Password');
+          }
+          else {
+            var sPassword = prompt('Enter the correct password, or Fuck Off!');
+          }
+          tNumber++;
+        }
+        alert('Valid password, Enjoy!')
+        window.location.href="./Homepage.html";
+      }
+      document.write(password());
+    </script>
+    <!-- <script type="text/javascript">
+      loopy()
+      function loopy() {
+        var tNumber = 1;
+        var sPassword;
+        while (sPassword != "123") {
+          if (tNumber < 3) {
+            sPassword = prompt("Please enter the password.")
+            tNumber++;
+          }
+          else {
+            sPassword = prompt("Enter the correct password, or Fuck Off!")
+          }
+        }
+        alert("Valid password, Enjoy!")
+      }
+    </script> -->
+  </head>
+  <body>
+
+  </body>
+</html>

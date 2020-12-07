@@ -2,6 +2,42 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <!-- Access By Password -->
+    <script type="text/javascript">
+      loopy()
+      function loopy() {
+        var tNumber = 1;
+        var sPassword;
+        while (sPassword != "123") {
+          if (tNumber < 3) {
+            sPassword = prompt("Please enter the password.")
+            tNumber++;
+          }
+          else {
+            sPassword = prompt("Enter the correct password, or Fuck Off!")
+          }
+        }
+        alert("Valid password, Enjoy!")
+      }
+    </script>
+    <!-- <script type="text/javascript">
+      function password() {
+        var tNumber = 1;
+        var sPassword = prompt('Please enter the password.');
+        while (sPassword != "123") {
+          if (tNumber < 2) {
+            var sPassword = prompt('Invalid Password');
+          }
+          else {
+            var sPassword = prompt('Enter the correct password, or Fuck Off!');
+          }
+          tNumber++;
+        }
+        alert('Valid password, Enjoy!')
+        window.location.href="./Homepage.html";
+      }
+      document.write(password());
+    </script> -->
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
@@ -45,19 +81,19 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://getbootstrap.com/docs/4.5/examples/product/">Product</a>
+              <a class="nav-link" href="#">Product</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://getbootstrap.com/docs/4.5/examples/carousel/html">Features</a>
+              <a class="nav-link" href="#">Features</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://getbootstrap.com/docs/4.5/examples/pricing/">Pricing</a>
+              <a class="nav-link" href="#">Pricing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./Instruction.html">Instruction</a>
+              <a class="nav-link" href="#">Instruction</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./Support.html">Support</a>
+              <a class="nav-link" href="#">Support</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://getbootstrap.com/docs/4.5/examples/sign-in/">Sign in</a>
@@ -73,13 +109,30 @@
           <br>
           Sponsored by <span style="text-decoration:underline">Clash</span>,
           <span style="text-decoration:underline">Quantumult</span> &
-          <span style="text-decoration:underline">Just My Socks</span>.
+          <span style="text-decoration:underline">FASTLINK</span>.
         </p>
         <p id="p2" style="font-size:18px;">Trending:
           <a href="./Sapphire-About.html"><span style="text-decoration:underline color="lightpray"">About us</span></a>
           ,
           <a href="./Sapphire-Join.html"><span style="text-decoration:underline color="lightpray"">Join us</span></a>
         </p>
+        <br><br>
+        <p style="font-size:30px;">Configuration Profiles:</p>
+        <p id="p1" style="font-size:20px;">
+          IOS Top-Speed:
+          <span style="text-decoration:underline"> https://sapphire-gallery.cn/IOS-HS.conf</span>
+          <br>
+          Android Top-Speed:
+          <a href="./Clash-HS.yaml"><span style="text-decoration:underline"> Click HERE to Download</span></a>
+          <br>
+          MacOS Top-Speed:
+          <a href="./Clash-HS.yaml"><span style="text-decoration:underline"> Click HERE to Download</span></a>
+          <br>
+          Windows Top-Speed:
+          <a href="./Clash-HS.yaml"><span style="text-decoration:underline"> Click HERE to Download</span></a>
+          <br>
+        </p>
+        <p id="p2" style="font-size:18px;">Go Premium: HIGHER SPEED VPN Service-Only <span style="text-decoration:underline"><strong>¥25</strong></span> NOW-</p>
       </div>
     </div>
 
@@ -93,7 +146,7 @@
               <p><i class="fas fa-gem"></i></p>
               <p>Gallery is &copy; Sapphire, U can view and download what you appreciate. Enjoy!
                 <br>
-                New to Sapphire? <a href="./index.html">Visit the homepage</a> or read our <a href="./Sapphire-About.html">getting started guide</a>.
+                New to Sapphire? <a href="./index.html">Visit the homepage</a> or read our <a href="#">getting started guide</a>.
               </p>
             </div>
             <div class="col-md-3">
