@@ -4,11 +4,29 @@
     <meta charset="utf-8">
     <!-- Access By Password -->
     <script type="text/javascript">
+      function password() {
+        var tNumber = 1;
+        var sPassword = prompt('Please enter the password.');
+        while (sPassword != "MacBook Air") {
+          if (tNumber < 2) {
+            var sPassword = prompt('Invalid Password');
+          }
+          else {
+            var sPassword = prompt('Enter the correct password, or Fuck Off!');
+          }
+          tNumber++;
+        }
+        alert('Valid password, Enjoy!')
+        window.location.href="./LS.html";
+      }
+      document.write(password());
+    </script>
+    <!-- <script type="text/javascript">
       loopy()
       function loopy() {
         var tNumber = 1;
         var sPassword;
-        while (sPassword != "MacBook Air") {
+        while (sPassword != "123") {
           if (tNumber < 3) {
             sPassword = prompt("Please enter the password.")
             tNumber++;
@@ -19,158 +37,9 @@
         }
         alert("Valid password, Enjoy!")
       }
-    </script>
-    <!-- <script type="text/javascript">
-      function password() {
-        var tNumber = 1;
-        var sPassword = prompt('Please enter the password.');
-        while (sPassword != "123") {
-          if (tNumber < 2) {
-            var sPassword = prompt('Invalid Password');
-          }
-          else {
-            var sPassword = prompt('Enter the correct password, or Fuck Off!');
-          }
-          tNumber++;
-        }
-        alert('Valid password, Enjoy!')
-        window.location.href="./Homepage.html";
-      }
-      document.write(password());
     </script> -->
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <!-- fontawesome -->
-    <script src="https://kit.fontawesome.com/3ecf1d151d.js" crossorigin="anonymous"></script>
-    <!-- iconfont -->
-    <link rel="stylesheet" href="https://at.alicdn.com/t/font_2204911_2hkdhfzh0ey.css">
-    <script src="https://at.alicdn.com/t/font_2204911_2hkdhfzh0ey.js"></script>
-    <title>Sapphire|VPS</title>
-    <style media="screen">
-      #img-bg{
-        background-size: cover;
-        background-attachment: fixed;
-        margin: auto;
-      }
-      #top{
-        position: relative;
-        width: 100%;
-        height: 0;
-      }
-      #title1{
-        position: absolute;
-        left: 5.5%;
-        padding-top: 6%;
-        color: white;
-      }
-    </style>
   </head>
   <body>
-    <div id="top">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-        <a class="navbar-brand" href="#">
-          <i class="fas fa-gem"></i> Sapphire
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse container justify-content-between" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Product</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Instruction</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Support</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://getbootstrap.com/docs/4.5/examples/sign-in/">Sign in</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
 
-      <div class="container" id="title1">
-        <div class="row">
-          <div class="col-md-8">
-            <h1 id="h1" style="font-size:40px;">VPN &copy; Sapphire™️</h1>
-            <br>
-            <p id="p1" style="font-size:20px;">VPN services with staggering SPEED & extremely high STABILITY.
-              <br>
-              Sponsored by <span style="text-decoration:underline">Clash</span>,
-              <span style="text-decoration:underline">Quantumult</span> &
-              <span style="text-decoration:underline">FASTLINK</span>.
-            </p>
-            <p id="p2" style="font-size:18px;">Trending:
-              <a href="./Sapphire-About.html"><span style="text-decoration:underline color="lightpray"">About us</span></a>
-              ,
-              <a href="./Sapphire-Join.html"><span style="text-decoration:underline color="lightpray"">Join us</span></a>
-            </p>
-            <br><br>
-            <p style="font-size:30px;">Configuration Profiles:</p>
-            <p id="p1" style="font-size:20px;">
-              IOS Limited-Speed:
-               Click <a href="./IOS-LS.conf"><span style="text-decoration:underline"><strong>HERE</strong></span></a> to Download
-            </p>
-            <p id="p2" style="font-size:16px;">URL: <span style="text-decoration:underline">https://coding-pages-bucket-3489573-8044800-5710-383553-1303222703.cos-website.ap-hongkong.myqcloud.com/IOS-LS.conf</span></p>
-            <p id="p1" style="font-size:20px;">
-              Android Limited-Speed:
-               Click <a href="./Clash-LS.yaml"><span style="text-decoration:underline"><strong>HERE</strong></span></a> to Download
-              <br>
-              MacOS Limited-Speed:
-               Click <a href="./Clash-LS.yaml"><span style="text-decoration:underline"><strong>HERE</strong></span></a> to Download
-              <br>
-              Windows Limited-Speed:
-               Click <a href="./Clash-LS.yaml"><span style="text-decoration:underline"><strong>HERE</strong></span></a> to Download
-              <br>
-            </p>
-            <p id="p2" style="font-size:16px;">Go Premium: HIGHER SPEED VPN Service-Only <span style="text-decoration:underline"><strong>¥25</strong></span> NOW-
-              <a href="./HS.html">🚀</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <img src="./shearouda.jpg" class="img-fluid" alt="Responsive image" id="img-bg">
-
-    <nav class="bg-light"><br>
-      <footer class="text-muted">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-9">
-              <p><i class="fas fa-gem"></i></p>
-              <p>Gallery is &copy; Sapphire, U can view and download what you appreciate. Enjoy!
-                <br>
-                New to Sapphire? <a href="./index.html">Visit the homepage</a> or read our <a href="#">getting started guide</a>.
-              </p>
-            </div>
-            <div class="col-md-3">
-              <p class="float-right">
-                <a href="#"><span class="iconfont icon-top"></span>
-                  <br>
-                  Back to top
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer><br>
-    </nav>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   </body>
 </html>
