@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/3ecf1d151d.js" crossorigin="anonymous"></script>
     <!-- iconfont -->
@@ -25,7 +24,7 @@
       #title1{
         position: absolute;
         left: 5.5%;
-        padding-top: 6%;
+        padding-top: 5.4%;
         color: white;
       }
     </style>
@@ -35,14 +34,23 @@
       <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
         <a class="navbar-brand" href="#">
           <i class="fas fa-gem"></i> Sapphire
+          <div style="font-size:12px; text-align:right;">
+            <span style="text-decoration:underline;">Standard Speed</span>
+          </div>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse container justify-content-between" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item active">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">WHY VPN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">WHY Sapphire</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Product</a>
@@ -51,16 +59,19 @@
               <a class="nav-link" href="#">Features</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="#">Instruction</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Support</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://getbootstrap.com/docs/4.5/examples/sign-in/">Sign in</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                View more
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">About</a>
+                <a class="dropdown-item" href="#">Join us</a>
+              </div>
             </li>
           </ul>
         </div>
@@ -68,7 +79,7 @@
 
       <div class="container" id="title1">
         <div class="row">
-          <div class="col-md-8">
+          <div class="col-md-7">
             <h1 id="h1" style="font-size:40px;">VPN &copy; Sapphire™️</h1>
             <br>
             <p id="p1" style="font-size:20px;">VPN services with staggering SPEED & extremely high STABILITY.
@@ -88,23 +99,23 @@
               <p style="font-size:16px;"><span style="text-decoration:underline">Limited-Speed</span></p>
             </div>
             <p id="p1" style="font-size:20px;">
-              🚄 IOS Limited-Speed:
-               Click <a href="./IOS-LS.zip"><span style="text-decoration:underline"><strong>HERE</strong></span></a> to Download
+              🚄 IOS Standard-Speed:
+               Click <a href="./IOS-SS.zip"><span style="text-decoration:underline"><strong>HERE</strong></span></a> to Download
             </p>
-            <p id="p2" style="font-size:16px;">URL: <span style="text-decoration:underline">https://coding-pages-bucket-3489573-8044800-5710-383553-1303222703.cos-website.ap-hongkong.myqcloud.com/IOS-LS.conf</span></p>
+            <p id="p2" style="font-size:16px;">URL: <span style="text-decoration:underline">https://coding-pages-bucket-3489573-8044800-5710-383553-1303222703.cos-website.ap-hongkong.myqcloud.com/IOS-SS.conf</span></p>
             <p id="p1" style="font-size:20px;">
-              🚄 Android Limited-Speed:
-               Click <a href="./Clash-LS.yaml"><span style="text-decoration:underline"><strong>HERE</strong></span></a> to Download
+              🚄 Android Standard-Speed:
+               Click <a href="./Clash-SS.yaml"><span style="text-decoration:underline"><strong>HERE</strong></span></a> to Download
               <br>
-              🚄 MacOS Limited-Speed:
-               Click <a href="./Clash-LS.yaml"><span style="text-decoration:underline"><strong>HERE</strong></span></a> to Download
+              🚄 MacOS Standard-Speed:
+               Click <a href="./Clash-SS.yaml"><span style="text-decoration:underline"><strong>HERE</strong></span></a> to Download
               <br>
-              🚄 Windows Limited-Speed:
-               Click <a href="./WIN-LS.zip"><span style="text-decoration:underline"><strong>HERE</strong></span></a> to Download
+              🚄 Windows Standard-Speed:
+               Click <a href="./WIN-SS.zip"><span style="text-decoration:underline"><strong>HERE</strong></span></a> to Download
               <br>
             </p>
             <p id="p2" style="font-size:16px;">Go Premium: HIGHER SPEED VPN Service-Only <span style="text-decoration:underline"><strong>¥25</strong></span> NOW-
-              <a href="./HS-index.html">🚀</a>
+              <a href="./TS-index.html">🚀</a>
             </p>
           </div>
         </div>
@@ -137,7 +148,8 @@
       </footer><br>
     </nav>
 
+    <!-- bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-  </body>
 </html>
