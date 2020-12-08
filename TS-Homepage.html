@@ -7,9 +7,9 @@
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/3ecf1d151d.js" crossorigin="anonymous"></script>
     <!-- iconfont -->
-    <link rel="stylesheet" href="https://at.alicdn.com/t/font_2204911_2hkdhfzh0ey.css">
-    <script src="https://at.alicdn.com/t/font_2204911_2hkdhfzh0ey.js"></script>
-    <title>Sapphire|VPS</title>
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_2204911_mekm7na597d.css">
+    <script src="https://at.alicdn.com/t/font_2204911_mekm7na597d.js"></script>
+    <title>Sapphire|VPS@TOP</title>
     <style media="screen">
       #img-bg{
         background-size: cover;
@@ -24,8 +24,16 @@
       #title1{
         position: absolute;
         left: 5.5%;
-        padding-top: 6%;
+        padding-top: 5.4%;
         color: white;
+      }
+    </style>
+    <style type="text/css">
+      .icon {
+        width: 1em; height: 1em;
+        vertical-align: -0.15em;
+        fill: currentColor;
+        overflow: hidden;
       }
     </style>
   </head>
@@ -79,7 +87,7 @@
 
       <div class="container" id="title1">
         <div class="row">
-          <div class="col-md-8">
+          <div class="col-md-7">
             <h1 id="h1" style="font-size:40px;">VPN &copy; Sapphire™️</h1>
             <br>
             <p id="p1" style="font-size:20px;">VPN services with staggering SPEED & extremely high STABILITY.
@@ -96,13 +104,22 @@
             <br><br>
             <div style="line-height: 20px;">
               <p style="font-size:30px;">Configuration Profiles:</p>
-              <p style="font-size:16px;"><span style="text-decoration:underline">TOP-Speed</span></p>
+              <p style="font-size:16px;"><span style="text-decoration:underline">Premium:</span></p>
             </div>
             <p style="font-size:20px;">
               🚀 IOS TOP-Speed:
                Click <a href="./IOS-TS.zip"><span style="text-decoration:underline"><strong>HERE</strong></span></a> to Download
             </p>
-            <p style="font-size:16px;">URL: <span style="text-decoration:underline">https://coding-pages-bucket-3489573-8044800-5710-383553-1303222703.cos-website.ap-hongkong.myqcloud.com/IOS-TS.conf</span></p>
+            <p id="p2" style="font-size:16px;">URL:&nbsp;
+              <!-- Target -->
+              <input id="foo" style="width:57%;" value="https://coding-pages-bucket-3489573-8044800-5710-383553-1303222703.cos-website.ap-hongkong.myqcloud.com/IOS-TS.conf">
+              <!-- Trigger -->
+              <button class="btn" data-clipboard-target="#foo">
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-fuzhi1"></use>
+               </svg>
+              </button>
+            </p>
             <p id="p1" style="font-size:20px;">
               🚀 Android TOP-Speed:
                Click <a href="./Clash-TS.yaml"><span style="text-decoration:underline"><strong>HERE</strong></span></a> to Download
@@ -114,7 +131,7 @@
                Click <a href="./WIN-TS.zip"><span style="text-decoration:underline"><strong>HERE</strong></span></a> to Download
               <br>
             </p>
-            <p id="p2" style="font-size:16px;">Go Back: MORE ECONOMICAL VPN Service-Only <span style="text-decoration:underline"><strong>¥20</strong></span> NOW-
+            <p id="p2" style="font-size:16px;">Go Economical: MORE PRACTICAL VPN Service-Only <span style="text-decoration:underline"><strong>¥20</strong></span> NOW-
               <a href="./index.html">🚄</a>
             </p>
           </div>
@@ -148,6 +165,20 @@
       </footer><br>
     </nav>
 
+    <!-- CDN Providers-Clipboard -->
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
+    <script>
+      var btns = document.querySelectorAll('button');
+      var clipboard = new ClipboardJS(btns);
+
+      clipboard.on('success', function(e) {
+        console.log(e);
+      });
+
+      clipboard.on('error', function(e) {
+        console.log(e);
+      });
+    </script>
     <!-- bootstrap -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
