@@ -33,6 +33,7 @@ secret: ''
 # external-ui: folder
 
 proxies:
+  - {"name":"🇭🇰 动态BGP+IPLC|广港01|3x","type":"vmess","server":"flbgp.yixuedianzishu.com","port":58011,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true}
   - {"name":"🇸🇬 Anycast|新加坡","type":"vmess","server":"flcn.yixuedianzishu.com","port":51511,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/564dfa20/","ws-headers":{"Host":"flcn.yixuedianzishu.com"},"tls":true,"skip-cert-verify":true}
   - {"name":"🇯🇵 Anycast|日本","type":"vmess","server":"flcn.yixuedianzishu.com","port":51512,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/564dfa20/","ws-headers":{"Host":"flcn.yixuedianzishu.com"},"tls":true,"skip-cert-verify":true}
   - {"name":"🇺🇲 Anycast|美国","type":"vmess","server":"flcn.yixuedianzishu.com","port":51513,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/564dfa20/","ws-headers":{"Host":"flcn.yixuedianzishu.com"},"tls":true,"skip-cert-verify":true}
@@ -54,6 +55,7 @@ proxy-groups:
   name: '💎 AUTO'
   type: url-test
   proxies:
+    - '🇭🇰 动态BGP+IPLC|广港01|3x'
     - '🇸🇬 Anycast|新加坡'
     - '🇯🇵 Anycast|日本'
     - '🇺🇲 Anycast|美国'
